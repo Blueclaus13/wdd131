@@ -30,11 +30,9 @@ body {
 header {
     grid-column: 1 / -1;
     grid-row: 1;
-    height: 10rem;
     color: var(--light-text);
     padding: 1rem;
     background-color: var(--dark-text);
-    min-height: 10rem;
 }
 
 .links {
@@ -93,6 +91,16 @@ footer {
     background-color: rgb(51, 51, 51);
     padding: 1rem;
     text-align: center;
+}
+
+img {
+    max-width: 100%;
+  }
+.photo{
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 @media screen and (max-width: 600px) {
