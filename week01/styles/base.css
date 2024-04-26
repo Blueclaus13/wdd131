@@ -1,6 +1,7 @@
 :root {
     --font-body: Arial, Helvetica, sans-serif;
-    --font-headline: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    --font-headline: "Oswald","Arial Narrow Bold", sans-serif;
+    --font-header:"Cinzel","Arial Narrow Bold", sans-serif;
     /* colors */
     --primary-color: #32533D;
     --secondary-color: #ED9390;
@@ -28,11 +29,16 @@ body {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto minmax(0, 1fr) auto;
     min-height: 100vh;
+    font-family: var(--font-body);
+}
+h1{
+    font-family: var(--font-header);
 }
 h2,h3{
     margin: 0.5em;
     color: var(--light-text);
-
+    font-family: var(--font-headline);
+    font-size: var(--large-font);
 }
 header {
     font-size: var(--large-font);
