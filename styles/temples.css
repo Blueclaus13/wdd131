@@ -2,6 +2,11 @@
     --font-body: Arial, Helvetica, sans-serif;
     --font-header : "Cinzel", sans-serif;
     --font-headline:"Playfair","Arial Narrow Bold", sans-serif;
+    /* sizes */
+    --font-base: 20px;
+    --small-font: 1em;
+    --medium-font: 2em;
+    --large-font: 3em;
 }
 body{
     font-family: var(--font-body);
@@ -16,6 +21,10 @@ header, main, footer{
 h2,h1{
     font-family: var(--font-header);
     text-align: center;
+    font-size: var(--large-font);
+}
+#title{
+    font-size: var(--medium-font);
 }
 header{
     background-color: palevioletred;
@@ -60,6 +69,8 @@ nav a {
         padding: 1rem;
         text-decoration: none;
         color: #fff;
+        font-size: var(--small-font);
+        letter-spacing: 5px;
 }
 a{
     cursor: pointer;
@@ -89,3 +100,10 @@ img {
    }
 .hover:hover {
     box-shadow: 0 0 50px #333;}
+footer {
+      
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+        font-size: var(--small-font);
+    }
