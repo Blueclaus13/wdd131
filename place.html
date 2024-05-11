@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Claudia Madrid">
+    <meta name="description" content="basic layout">
+    <title>Basic Layout/ Claudia Madrid / WDD 131</title>
+    <link rel="stylesheet" href="styles/place.css"/>
+    <link rel="stylesheet" href="styles/place-large.css"/>
+    <script defer src="scripts/place.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Mexico</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/teotihuacan-mexico-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/folklor-mexico-medium.webp" media="(min-width: 500px)">
+                <img src="images/market-mexico-small.webp " alt="Mexico places" width="500" height="250">
+            </picture>
+        </div>
+        <div id="data">
+            <h2>Data</h2>
+            <div class="container">
+                <div>
+                    <span class="label">Area: </span>
+                    <span class="value">1,972,550 km2</span>
+                </div>
+                <div>
+                    <span class="label">Population: </span>
+                    <span class="value">127.5 million</span>
+                </div>
+                <div>
+                    <span class="label">Capital: </span>
+                    <span class="value">Mexico City</span>
+                </div>
+                <div>
+                    <span class="label">Languages: </span>
+                    <span class="value">Spanish</span>
+                </div>
+                <div>
+                    <span class="label">Currency: </span>
+                    <span class="value">Peso</span>
+                </div>
+                <div>
+                    <span class="label">Time Zone: </span>
+                    <span class="value">GMT-6</span>
+                </div>
+                <div>
+                    <span class="label">Calling Code: </span>
+                    <span class="value">+52</span>
+                </div>
+                <div>
+                    <span class="label">Internet TLD: </span>
+                    <span class="value">.mx</span>
+                </div>
+            </div>
+        </div>
+        <div id="weather">
+            <h2>Weather</h2>
+            <img src="images/icon-sun.png " alt="cloudy Day" width="60" height="60">
+            <div class="container">
+                <div>
+                    <span class="label">Temperature: </span>
+                    <span class="value">30 °C</span>
+                </div>
+                <div>
+                    <span class="label">Conditions: </span>
+                    <span class="value">Party Cloudy</span>
+                </div>
+                <div>
+                    <span class="label">Wind: </span>
+                    <span class="value">10km/h</span>
+                </div>
+                <div>
+                    <span class="label">Wind Chill: </span>
+                    <span class="value">20 °C</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> Claudia Madrid - Chihuahua, Chihuahua, Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
