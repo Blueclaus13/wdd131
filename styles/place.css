@@ -61,7 +61,7 @@ header{
     flex-direction: column;
     align-items: center;
     background-color: var(--primary-color);
-
+    padding: var(--padding);
 }
   footer {
     font-size: var(--font-base);

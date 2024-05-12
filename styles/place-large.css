@@ -1,4 +1,39 @@
 @media screen and (min-width: 500px){
+    body {
+        position: relative;
+    }
 
-   
+    #data {
+        position: absolute;
+        top: 30%;
+        left: 3%;
+        background-color: rgba(0, 0, 0, .8);
+        color: white;
+        display: block;
+        padding-right: 40px;
+    }
+
+    #weather {
+        position: absolute;
+        bottom: 15%;
+        right: 3%;
+        background-color: rgba(0, 0, 0, .8);
+        color: white;
+        display: block;
+        padding-right: 40px;
+        border: none;
+    }
+    .weather-icon {
+        display: none;
+    }
+    #weather h2::after{
+        content: "🌦️";
+    }
+    h2{
+        background-color: var(--tertiary-color);
+        text-align: left;
+        margin-left: -30px;
+        margin-top: -10px;
+        padding-left: 1em;
+    }
 }
