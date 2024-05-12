@@ -1,6 +1,6 @@
 :root {
     --font-body: Arial, Helvetica, sans-serif;
-    --font-headline: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    --font-headline: "Cinzel", "Arial Narrow Bold", sans-serif;
     /* colors */
     --primary-color: #FFFFFF;
     --secondary-color: #206013;
@@ -28,6 +28,7 @@ h2{
     text-align: center;
     font-size: var(--large-font);
     text-decoration: underline var(--tertiary-color);
+    font-family: var(--font-headline);
 }
 body{
     background-color: var(--secondary-color);
@@ -38,6 +39,7 @@ header{
     color: var(--primary-color);
     text-align: center;
     font-size: var(--title-font);
+    font-family: var(--font-headline);
 }
 .label{
     font-weight: var(--font-weight);
