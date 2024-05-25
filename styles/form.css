@@ -1,0 +1,152 @@
+:root {
+    --font-body: Arial, Helvetica, sans-serif;
+    --font-headline: "Cinzel", "Arial Narrow Bold", sans-serif;
+    /* colors */
+    --primary-color: #FFFFFF;
+    --secondary-color: purple;
+    --tertiary-color: rgb(51, 51, 51);
+    --light-text: #F7FFF7;
+    --dark-text: #292F36;
+  
+    /* sizes */
+    --font-base: 1.2em;
+    --small-font: 0.8em;
+    --large-font: 2em;
+    --title-font: 3em;
+    --font-weight: 600;
+
+    /* labels */
+    --label-width: 7em;
+    --label-heigh: 5em;
+    /* general  area*/
+    --padding: 1rem;
+    --form-width: 400px;
+  }
+
+body  {
+    margin: 1rem;
+    box-sizing: border-box;
+}
+
+/* stars */
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.stars > label {
+	color: gold;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+
+.stars > label:hover {
+	color: #000;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+header{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    background-color:  var(--tertiary-color);
+    color: var(--primary-color);
+    font-size: var( --large-font);
+}
+
+footer {
+    font-size: var(--font-base);
+    color: var(--primary-color);
+    background-color:  var(--tertiary-color);
+    padding: var(--padding);
+    text-align: center;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+/* Form */
+
+.reviewForm fieldset{
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    max-width: var(--form-width) ;
+}
+.reviewForm span{
+    color: var(--secondary-color);
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+.reviewForm label{
+    display: block;
+    padding-top: 1rem;
+    color: var(--tertiary-color);
+    font-size: var(--font-base);
+}
+.reviewForm legend{
+    color: var(--tertiary-color);
+    font-size: var(--font-base);
+}
+
+.reviewForm input[type="date"],
+.reviewForm select,
+.reviewForm textarea,
+.reviewForm input[type="text"]{
+    background-color: var(--primary-color);
+    display: block;
+    border: solid 1px var(--tertiary-color);
+    border-radius: 6px;
+    padding: 0.75rem;
+    color: var(--tertiary-color);
+    width: 100%; 
+    max-width: var(--form-width);
+    font-size: var(--font-base);
+    appearance: none;
+}
+
+.reviewForm input[type="submit"]{
+    border: none;
+    background-image:  linear-gradient(var(--secondary-color), #6f200e);
+    color: var(--primary-color);
+    border-radius: 6px;
+    padding: 0.8rem;
+    width: 100%;
+    max-width: var(--form-width);
+    font-size: var(--font-base);
+    margin: 1rem;
+    box-shadow: 1px 1px 4px #999;
+    cursor: pointer;
+}
+
+.reviewForm select:required,
+.reviewForm input:required{
+    border-left: solid 8px red;  
+}
+.reviewForm select:required:valid,
+.reviewForm  input:required:valid{
+    border-bottom: solid 8px green; 
+    border-left: solid 1px black;  
+}
