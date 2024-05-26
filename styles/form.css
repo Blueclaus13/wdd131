@@ -23,45 +23,9 @@
     --form-width: 400px;
   }
 
-body  {
+body {
     margin: 1rem;
     box-sizing: border-box;
-}
-
-/* stars */
-input[type="radio"] {
-	display: none;
-	position: relative;
-	caret-color: rgba(0, 0, 0, 0);
-}
-
-.stars {
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: left;
-}
-
-.stars > label {
-	color: gold;
-	width: 30px;
-	height: 30px;
-	font-size: 2rem;
-	margin-left: 5px;
-	display: flex;
-	align-items: center;
-	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
-}
-
-.stars > label:hover {
-	color: #000;
-}
-
-.stars > label::before {
-	content: "\2606";
-}
-
-.stars input:checked ~ label::before {
-	content: "\2605";
 }
 header{
     margin: 0 auto;
@@ -84,8 +48,8 @@ main {
     padding: 0 2%;
     min-height: 20rem;
 }
-/* Form */
 
+/* Form */
 .reviewForm fieldset{
     margin: 2rem 0;
     border: 1px solid #ddd;
@@ -105,6 +69,7 @@ main {
     padding-top: 1rem;
     color: var(--tertiary-color);
     font-size: var(--font-base);
+    margin-bottom: 0.8rem;
 }
 .reviewForm legend{
     color: var(--tertiary-color);
@@ -121,7 +86,7 @@ main {
     border-radius: 6px;
     padding: 0.75rem;
     color: var(--tertiary-color);
-    width: 100%; 
+    width: 90%; 
     max-width: var(--form-width);
     font-size: var(--font-base);
     appearance: none;
@@ -133,7 +98,7 @@ main {
     color: var(--primary-color);
     border-radius: 6px;
     padding: 0.8rem;
-    width: 100%;
+    width: 90%;
     max-width: var(--form-width);
     font-size: var(--font-base);
     margin: 1rem;
@@ -150,3 +115,43 @@ main {
     border-bottom: solid 8px green; 
     border-left: solid 1px black;  
 }
+
+/* stars */
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+    margin: 0;
+    padding: 0;
+}
+
+.stars > label {
+    padding: 0;
+	color: gold;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: flex-start;
+    justify-content:center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+
+.stars > label:hover {
+	color: gold;
+}
+
+.stars > label::before {
+	content: "\2606";   
+}
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
