@@ -7,11 +7,13 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Claudia Madrid - Paws Patrol Association without lucrative purposes">
     <meta name="author" content="Claudia Madrid">
     <link rel="stylesheet" href="styles/pawsWorld.css" />
+    <link rel="stylesheet" href="styles/form.css" />
     <link rel="stylesheet" href="styles/pawsWorld-large.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <script defer src="scripts/pawsWorld.js"></script>
+    <script defer src="scripts/adoption.js"></script>
 </head>
 <body>
     <header>
@@ -22,19 +24,22 @@
         <nav class="links">
             <a href="pawsWorld.html">Home</a>
             <a href="adoptions.html">Adoption</a>
-            <a href="aboutUs.html">About us</a>
+            <a href="form.html">Form Adoption</a>
         </nav>
     </header>
+
     <main>
-        <h2 id="title">ABOUT US</h2>
-        <section class="information"></section>
-        <section class="contact"></section>
+        <div id="thank-you">
+            <p>Thank you very much for your interest!!</p>
+            <div>
+                <p id="reviews"> Requests made: <span class="visits"></span></p>
+            </div>
+        </div>
     </main>
+
     <footer>
-        <p> Paws World address: Calle Rosales #2528 a dos cuadras del pasito. </p>
-        <p>© <span id="currentyear"></span> Made by Claudia Madrid without lucrative purposes- Chihuahua, Chihuahua, Mexico</p>
+        <p>© <span id="currentyear"></span> Claudia Madrid - Chihuahua, Chihuahua, Mexico</p>
         <p id="lastModified"></p>
     </footer>
-    
 </body>
 </html>

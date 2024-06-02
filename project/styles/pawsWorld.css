@@ -16,6 +16,11 @@
     --headline-font: 2.2em;
     --title-font: 2.8em;
     --font-weight: 800;
+
+    /* labels */
+    --label-width: 7em;
+    /* general  area*/
+    --padding: 0.5rem;
   }
 
   footer {

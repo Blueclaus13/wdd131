@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws Patrol Association without lucrative purposes - by Claudia Madrid</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Claudia Madrid - Paws Patrol Association without lucrative purposes">
+    <meta name="author" content="Claudia Madrid">
+    <link rel="stylesheet" href="styles/pawsWorld.css" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="styles/pawsWorld-large.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script defer src="scripts/pawsWorld.js"></script>
+    <script defer src="scripts/adoption.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Paws</h1>
+        <div id="logo"><img src="images/logo.png" alt="https://www.freepik.com/icon/paws_1152398"></div>
+        <h1>World</h1>
+        <button id="menu"></button>
+        <nav class="links">
+            <a href="pawsWorld.html">Home</a>
+            <a href="adoptions.html">Adoption</a>
+            <a href="form.html">Form Adoption</a>
+        </nav>
+    </header>
+    <main>
+        <h2 id="title">REGISTER TO ADOPT FORM</h2>
+        <section class="information"></section>
+        <section class="contact">
+            <form method="get" action="review.html" class="reviewForm">
+                <label>I am interested in
+                    <select id="products" name="product" required>
+                        <option value="" disabled selected>Select a Pet ... &#9662;</option>
+                    </select>
+                </label>
+                <label>
+                    Date that I would like an appointment: 
+                    <input type="date" id="instalationDate" name="instalationDate" required>
+                </label>
+                <fieldset>
+                    <legend> Which features did you find useful in the product?</legend>
+                    <span>(Check all that apply)</span>
+                    <label><input type="checkbox" name="durability" id="durability" value="yes"> Durability</label>
+                    <label><input type="checkbox" name="use" id="use" value="yes"> Ease of Use</label>
+                    <label><input type="checkbox" name="performance" id="performance" value="yes"> Performance</label>
+                    <label><input type="checkbox" name="design" id="design" value="yes"> Design</label>
+                </fieldset>
+                <label>Write a Review
+                    <span>(Optional)</span>
+                    <textarea id="review" name="review" spellcheck="false"></textarea>
+                </label>
+                <label>Your Name: 
+                    <span>(Optional)</span>
+                    <input type="text" name="name" id="name"></label>
+                <input id="submit" type="submit" value="Send Review">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p> Paws World address: Calle Rosales #2528 a dos cuadras del pasito. </p>
+        <p>© <span id="currentyear"></span> Made by Claudia Madrid without lucrative purposes- Chihuahua, Chihuahua, Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
