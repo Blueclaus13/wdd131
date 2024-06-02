@@ -47,6 +47,9 @@ main {
     font-size: var(--font-base);
     appearance: none;
 }
+#reason label{
+    color: var(--dark-text);
+}
 
 .reviewForm input[type="submit"]{
     border: none;
